@@ -1,1 +1,24 @@
- 
+*{
+    background-color: #8000FF;
+}
+
+#init{
+    position: relative;
+    margin: 40% 20%;
+    /* border: 2px solid #FE642E; */
+    /* height: 60%; */
+}
+
+button{
+    border: 2px solid #FE642E;
+    border-radius: 5px;
+    background-color: #FE642E;
+    color: white;
+    font-size: 30px;
+    width: 70%;
+    position: relative;
+    display: block;
+    align-content: center;
+    margin: 30% 15%;
+    justify-content: center;
+}
