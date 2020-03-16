@@ -2,14 +2,20 @@
  <html lang="en">
  <head>
      <meta charset="UTF-8">
-     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Papelitos</title>
      <script src="main.js"></script>
  </head>
  <body>
      <div id='init'>
-        <button id='create' onclick="clearBox('init')">Create</button>
-        <button id='join' onclick="clearBox('init')">Join</button>
+        <button id='create' onclick="next('init')">Create</button>
+        <button id='join' onclick="next('init')">Join</button>
+     </div>
+     <div id='login'>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" id='name' name='name'>
+        </form>
      </div>
      <link rel="stylesheet" href="style.css">
  </body>

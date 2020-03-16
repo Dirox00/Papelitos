@@ -1,4 +1,4 @@
-function clearBox(idName)
+function next(idName)
 {
     var elem = document.getElementById(idName);
     if (elem.style.display === "none") {
@@ -7,4 +7,5 @@ function clearBox(idName)
     else {
         elem.style.display = "none";
       }
+    elem.nextElementSibling.style.display = 'block'
 }
