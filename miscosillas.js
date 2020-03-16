@@ -13,3 +13,7 @@ function distributeWords(palabras, usuarios){
     }
   } 
   
+p = ['hola', 'pedro']
+g = ['y', 't']
+
+console.log(distributeWords(p, g))

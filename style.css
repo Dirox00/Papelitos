@@ -1,5 +1,7 @@
 *{
     background-color: #8000FF;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 
 #init{
@@ -24,5 +26,61 @@ button{
 }
 
 #login{
+    /* border: 2px solid #FE642E; */
     display: none;
+    position: relative;
+    margin: 40% 0%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#login label{
+    font-size: 50px;
+}
+
+#login input[type=text]{
+    color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    height: 30px;
+    text-align: center;
+}
+
+#login input[type=submit]{
+    border: 2px solid #FE642E;
+    border-radius: 5px;
+    background-color: #FE642E;
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    display: block;
+    align-content: center;
+    margin: 20% 25%;
+    justify-content: center;
+}
+
+
+#teams{
+    display: none;
+    position: relative;
+    /* margin: 40% 0%; */
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#teams #team1{
+    margin: 20% 15%;
+    border-color:red;
+    background-color: red;
+}
+#teams #team2{
+    margin: 20% 15%;
+    border-color:green;
+    background-color: green;
 }
