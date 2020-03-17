@@ -11,15 +11,31 @@
         <button id='create' onclick="next('init')">Create</button>
         <button id='join' onclick="next('init')">Join</button>
      </div>
-    <form id='login' onsubmit='return false;'>
+     <form id='login' onsubmit='return false;'>
         <label for="name">Username</label><br><br>
-        <input type="text" id='name'>
+        <input type="text" id='name' placeholder='Name'>
         <input type="submit" value="Submit" onclick="login()">
     </form>
     <div id='teams'>
         <h1>Choose team:</h1>
         <button id='team1' onclick="team(1)">Team 1</button>
         <button id='team2' onclick="team(2)">Team 2</button>
+    </div>
+    <form id='words' onsubmit="return false;">
+        <label for="newWord">Enter word</label><br><br>
+        <input type="text" id='word' placeholder='Word'>
+        <input type="submit" value="Submit" onclick="addWord()">
+        <p id='ok'></p>
+    </form>
+    <div id='round'>
+        <h2>Ronda de descripciones!</h1>
+        <button onclick="next('round')">Let's go</button>
+    </div>
+    <div id='turn'>
+        <p id='player'>Player</p>
+        <p id='points'>points</p>
+        <p id=turnOf>TurnOf</p>
+        <p id=cRound>Round</p>
     </div>
      <link rel="stylesheet" href="style.css">
  </body>
