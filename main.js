@@ -2,7 +2,11 @@ var users = ['hola'];
 var team1 = [];
 var team2 = [];
 var words = [];
-var N = 1;
+var N = 2;
+var i = 0;
+var j = 0;
+var k = 0;
+var curTeam = 'red';
 
 function next(idName)
 {
@@ -36,9 +40,9 @@ function team(n){
 }
 
 function addWord(){
-    if (word.value != ''){
+    word = document.getElementById("word").value;
+    if (word != ''){
         if (words.length < N){
-            word = document.getElementById("word").value;
             if (! words.includes(word)){
                 words.push(word);
             }
@@ -53,6 +57,47 @@ function addWord(){
         else{
             alert('Words list is already full.');
             return next('words');
+        }
+    }
+}
+
+function nextWord(){
+    var curWord = document.getElementById('turnOf');
+    curWord.innerHTML = words[i]
+    i += 1;
+}
+
+user = 'Pedro'
+
+function nextPerson(){
+    var elem = document.getElementById('round');
+    elem.style.display = "none";
+    nextSib = elem.nextElementSibling;
+    nextSib.style.display = 'block';
+    if (curTeam == 'red'){
+        curTeam = 'green';
+        w = nextWord();
+        curPlayer = team1[j];
+        j += 1;
+        if (curPlayer == user){
+            getElementById('nameLabel').innerHTML = 'Es tu turno!!';
+            getElementById('turnOf').innerHTML = w;
+        }
+        else{
+            getElementById('turnOf').innerHTML = curPlayer;
+        }
+    }
+    else{
+        curTeam = 'red';
+        w = nextWord();
+        curPlayer = team2[k];
+        k += 1;
+        if (curPlayer == user){
+            getElementById('nameLabel').innerHTML = 'Es tu turno!!';
+            getElementById('turnOf').innerHTML = w;
+        }
+        else{
+            getElementById('turnOf').innerHTML = curPlayer;
         }
     }
 }

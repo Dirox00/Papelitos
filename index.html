@@ -29,13 +29,21 @@
     </form>
     <div id='round'>
         <h2>Ronda de descripciones!</h1>
-        <button onclick="next('round')">Let's go</button>
+        <button onclick="nextPerson()">Let's go</button>
     </div>
     <div id='turn'>
-        <p id='player'>Player</p>
-        <p id='points'>points</p>
-        <p id=turnOf>TurnOf</p>
-        <p id=cRound>Round</p>
+        <div id="scoreboard">
+            <p id='teamRed'>Rojos</p>
+            <p id='teamGreen'>Verdes</p>
+            <p id='pointsRed'>00</p>
+            <p id='pointsGreen'>01</p>
+        </div>
+        <p id=nameLabel>Turno de</p>
+        <p id=turnOf>[Nombre]</p>
+        <button onclick="nextWord()">Next</button>
+        <p id="counter">00</p>
+        <p id="timer">60</p>
+        <p id=curRound>Round</p>
     </div>
      <link rel="stylesheet" href="style.css">
  </body>

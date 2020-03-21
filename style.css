@@ -112,8 +112,105 @@ input[type=submit]{
 #turn{
     display: none;
     position: relative;
-    margin: 40% 0%;
+    /* margin: 40% 0%; */
     color: white;
     font-size: 30px;
     text-align: center;
+}
+
+#scoreboard{
+    position: relative;
+    /* margin: 40% 0%; */
+    /* color: black; */
+    /* background-color: #FE642E; */
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#teamRed{
+    display: inline-block;
+    margin: 15px 0 0 0;
+    background-color: inherit;
+    text-align: center;
+    left: 0; 
+    width: 40%;
+    border-radius: 5px;
+}
+#teamGreen{
+    display: inline-block;
+    margin: 15px 0 0 0;
+    background-color: inherit;
+    text-align: center;
+    right: 0; 
+    width: 40%;
+    border-radius: 5px;
+}
+#pointsRed{
+    display: inline-block;
+    margin: 10px 10% 0 10%;
+    background-color: inherit;
+    border-radius: 50%;
+    text-align: center;
+    left: 0%; 
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+#pointsGreen{
+    display: inline-block;
+    margin: 10px 10% 0 10%;
+    background-color: inherit;
+    border-radius: 50%;
+    text-align: center;
+    right: 0%; 
+    width: 50px;
+    height: 50px;
+    line-height: 50px;    
+}
+
+#nameLabel{
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+#turnOf{
+    font-size: 40px;
+    margin: 20px 0;
+}
+#counter{
+    display: inline-block;
+    margin: 30px 10% 0 10%;
+    background-color: #FE642E;
+    border-radius: 50%;
+    text-align: center;
+    left: 0%; 
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size:40px;
+}
+#timer{
+    display: inline-block;
+    margin: 30px 10% 0 10%;
+    background-color: #FE642E;
+    border-radius: 50%;
+    text-align: center;
+    right: 0%; 
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size:40px;    
+}
+#curRound{
+    border: 2px solid #FE642E;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    color: #FE642E;
+    /* background-color: ; */
+}
+#turn button{
+    display: none;
+    background-color: #FE642E;
+    margin: 0 15%;
 }
