@@ -1,4 +1,4 @@
-var users = ['hola'];
+var users = [;
 var team1 = [];
 var team2 = [];
 var words = [];
